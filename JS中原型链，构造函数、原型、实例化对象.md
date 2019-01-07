@@ -27,6 +27,14 @@ F原型链：F => Function.prototype => Object.prototype
 注意区分：实例化与原型关系
 
 由此引出，什么是构造函数，什么是原型
+> Object和Function都既是函数也是对象;所有的函数都是对象，可是并不是所有的对象都是函数。证明如下：
+
+     ```js
+     1 function foo(){};  
+     2 alert(foo instanceof Function); // true  
+     3 alert(foo instanceof Object); // true  
+     4 alert(new foo() instanceof Function); // false
+     ```
 
 1、 什么是构造函数
 
