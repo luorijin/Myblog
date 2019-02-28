@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 进入
-actionLink: /guide/
+actionLink: /js/JS中原型链，构造函数、原型、实例化对象
 # features:
 # - title: 基础知识
 #   details: 小程序 | npm | git | javascript | node | webpack | gulp | vue | react 基础学习记录
@@ -10,7 +10,7 @@ actionLink: /guide/
 #   details: vue | react | webapck 框架及相关技术的源码学习及参考实现
 # - title: 其它
 #   details: css布局技巧 | 兼容性问题
-footer: MIT Licensed | Copyright © 2019-present Luo
+footer: Copyright © 2019-present Luo
 ---
 
 <div class="features">
@@ -24,7 +24,7 @@ footer: MIT Licensed | Copyright © 2019-present Luo
     </div>
     <div class="feature">
         <h2>其它</h2> 
-        <p>css布局技巧 | 兼容性问题</p>
+        <p>css布局技巧 | 兼容性问题 | 开发经验</p>
     </div>
     
 </div>
