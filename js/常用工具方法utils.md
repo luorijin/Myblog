@@ -1,7 +1,7 @@
 # js常用工具方法utils
 
 ## 其它常用方法
-```es6
+```js
     export default {
         timeFormat(seconds){//格式化秒数为天时分秒
             function formatMinutes(minutes){
@@ -47,11 +47,24 @@
         },
         numToletter(num){//数字转大小字母 0转A
             return String.fromCharCode(65 + parseInt(num))+" ";
+        },
+        urlParse(query) {//url参数解析---(id=3&gg=3)
+            if (typeof query !== 'string') {
+                return {};
+            }
+            let abj = {},
+                reg = /^([^&]*)=([^#&]*)(\/|#|&|$)/,
+                matchs = [];
+            while (matchs = query.match(reg)) {
+                abj[matchs[1]] = decodeURIComponent(matchs[2]);
+                query = query.substring(matchs[0].length);
+            }
+            return abj;
         }
 }
 ```
 ## localStorage带过期时间
-```es6
+```js
     export default {
     setItem: function (key, value, days) {
         // 设置过期原则
