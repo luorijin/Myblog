@@ -22,7 +22,8 @@ module.exports = {
             title: 'vue源码学习',
             children: [
                 '/vue源码学习/vue编译原理',
-                '/vue源码学习/深入vue2.0模板渲染底层思想'
+                '/vue源码学习/深入vue2.0模板渲染底层思想',
+                '/vue源码学习/vue源码之htmlParse解析器的实现'
             ]
           },
           {
@@ -33,7 +34,10 @@ module.exports = {
           },
           {
             title:"webpack源码学习",
-            children:[]
+            children:[
+              '/webpack源码学习/webpack执行流程',
+              '/webpack源码学习/webpack原理分析'
+            ]
           },
           {
             title:'npm',
