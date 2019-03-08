@@ -23,7 +23,8 @@ module.exports = {
             children: [
                 '/vue源码学习/vue编译原理',
                 '/vue源码学习/深入vue2.0模板渲染底层思想',
-                '/vue源码学习/vue源码之htmlParse解析器的实现'
+                '/vue源码学习/vue源码之htmlParse解析器的实现',
+                '/vue源码学习/vue-loader源码解析'
             ]
           },
           {
@@ -37,6 +38,12 @@ module.exports = {
             children:[
               '/webpack源码学习/webpack执行流程',
               '/webpack源码学习/webpack原理分析'
+            ]
+          },
+          {
+            title:"rollup配置使用",
+            children:[
+              '/rollup/使用Rollup构建你的Library'
             ]
           },
           {
