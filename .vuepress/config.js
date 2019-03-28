@@ -24,6 +24,7 @@ module.exports = {
                 '/vue源码学习/vue编译原理',
                 '/vue源码学习/深入vue2.0模板渲染底层思想',
                 '/vue源码学习/vue源码之htmlParse解析器的实现',
+                '/vue源码学习/vue1.0源码之v-for',
                 '/vue源码学习/vue-loader源码解析'
             ]
           },
