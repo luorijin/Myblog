@@ -40,6 +40,12 @@
             var uuid = s.join("");
             return uuid;
         },
+        numberFormat(){
+            let pattern = /(?=(\B\d{3})+\.)/g
+            return number.toFixed(2).toString().replace(pattern, ',');
+            // let pattern = /(\d)(?=(\d{3})+\.)/g
+            // return number.toFixed(2).toString().replace(pattern, '$1,')
+        },
         deepClone(obj){//对象深拷贝
             let _obj = JSON.stringify(obj);
             let objClone = JSON.parse(_obj);

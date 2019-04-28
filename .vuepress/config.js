@@ -9,7 +9,8 @@ module.exports = {
                 '/js/JS中原型链，构造函数、原型、实例化对象',
                 '/js/模板引擎template.js使用文档',
                 '/js/数组操作',
-                '/js/常用工具方法utils'     
+                '/js/常用工具方法utils',
+                '/js/正则表达式'     
             ]
           },
           {
