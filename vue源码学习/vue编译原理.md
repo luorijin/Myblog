@@ -2,8 +2,6 @@
 
 关于vue的内部原理其实有很多个重要的部分，变化侦测，模板编译，virtualDOM，整体运行流程等。
 
-之前写过一篇《深入浅出 - vue变化侦测原理》 讲了关于变化侦测的实现原理。
-
 那今天主要把 模板编译 这部分的实现原理单独拿出来讲一讲。
 
 本文我可能不会在文章中说太多细节部分的处理，我会把 vue 对模板编译这部分的整体原理讲清楚，主要是让读者读完文章后对模板编译的整体实现原理有一个清晰的思路和理解。
@@ -264,7 +262,7 @@ if (textEnd >= 0) {
 
 截取之后就需要对文本进行解析，不过在解析文本之前需要进行预处理，也就是先简单加工一下文本，vue 是这样做的：
 
-```
+```js
 const children = currentParent.children
 text = inPre || text.trim()
   ? isTextTag(currentParent) ? text : decodeHTMLCached(text)
@@ -319,7 +317,7 @@ children.push({
 
 而带变量的文本要多一个解析文本变量的操作：
 
-```
+```js
 const expression = parseText(text, delimiters) // 对变量解析 {{name}} => _s(name)
 children.push({
   type: 2,
@@ -743,7 +741,7 @@ export function generate (
 `代码生成器（code generator`）的作用是使用 `element ASTs` 生成 render函数代码（generate render function code from element ASTs）。
 
 用一张图来表示：
-![流程图](./map.png)]
+![流程图](./map.png)
 
 编译原理整体流程图
 
